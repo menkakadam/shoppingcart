@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3 mt-4" *ngFor="let item of bookList; let i = index">
+      <div class="text-center mb-2">
+        <img (click)="Details(item)" src="./../../assets/img/{{item.img}}" />
+      </div>
+      <div>{{item.name}}</div>
+      <div class="amount mt-1 mb-1">
+        <a>{{item.price  | currency: "Rs. "}}</a>
+        <a>{{item.originalPrice | currency: "Rs. " }}</a>
+      </div>
+      <a class="link-detail" (click)="Details(item)">Details</a>
+      <div class="text-center"> {{item.shortDetail}}</div>
+      <button class="btn-block mt-2" (click)="addToCart(item, i)">Add to Cart</button>
+    </div>
+  </div>
+</div>

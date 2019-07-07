@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" routerLink="myshoppe" routerLinkActive="active" href="javascript:void(0)">My Shoppe</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navb">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a  routerLink="book"  routerLinkActive="active"class="nav-link" href="javascript:void(0)">Book</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-success my-2 my-sm-0" type="button">Search</button>
+        <a routerLink="/cart" class="btn cart-btn"> <span class="cart-count">{{cartCount}}</span> Cart</a>
+      </form>
+    </div>
+  </nav>
+  

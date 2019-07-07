@@ -1,0 +1,40 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="mt-5 pl-5">
+        <div class="box-book text-center">
+          <img src="./../../assets/img/{{details.img}}">
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <div class="mt-5 pl-5">
+        <div class="bookdetails">
+          <h4> {{details.name}} :  {{details.shortDetail}}</h4>
+        </div>
+        <hr>
+        <h5><a class="link-detail">See all Formats and Details </a></h5>
+        <div class="book-board p-1">
+          <div class="border:1px solid">Board Book</div>
+          <div>{{details.price}}</div>
+        </div>
+        <h6><a > 1 New <span>from</span> {{details.originalPrice}}</a></h6>
+        <div class="row">
+          <div class="col-sm-4">
+            <a  class="width:30px">Pay on Delivery</a>
+          </div>
+          <div class="col-sm-4">
+            <a class="width:30px">10 Days Returnable</a>
+          </div>
+          <div class="col-sm-4">
+            <button class="btn-block mt-2" (click)="addToCart(details)">Add to Cart</button>
+          </div>
+        </div>
+        <hr>
+        <div>
+          <h4>{{details.fulletail}}</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
