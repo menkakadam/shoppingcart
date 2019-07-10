@@ -1,1 +1,87 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'assets/scss/variables.scss';
+
+.col-sm-3 {
+  img {
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+}
+
+.book-board {
+  border: 1px solid $borderColor;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.amount {
+  display: flex;
+  justify-content: space-between;
+}
+
+.amount a:last-child {
+  text-decoration: line-through !important;
+}
+
+a:not([href]).link-detail {
+  text-decoration: underline;
+  color: $blue;
+  font-size: 14px;
+}
+
+.cart-btn {
+  border-radius: 50%;
+  border: 1px solid white;
+  color: #fff !important;
+  font-size: 14px;
+  width: 40px;
+  padding: 0;
+  height: 40px;
+  position: relative;
+  margin-left: 30px;
+  padding-top: 9px; 
+
+  .cart-count {
+    position: absolute;
+    top: -4px;
+    left: -12px;
+    background: #29b742;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    font-size: 12px;
+  }
+}
+.border-top{
+  border-top: 1px solid #ddd;
+}
+.book-img{
+  max-height: 300px;
+}
+.box-book{
+  img{
+    max-height: 400px;
+  }
+}
+.deleteLink{
+  float: right;
+  color: red !important;
+  font-size:12px;
+}
+.cart {
+  img{
+    max-height: 200px;
+  }
+}
+
+.border-bottom{
+  border-bottom: 1px solid #ddd;
+}
+
+.order-box{
+  border: 1px solid #ddd;
+}
+.amount-box{
+  background: #ddd;
+}

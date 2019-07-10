@@ -1,0 +1,7 @@
+$borderColor: #ef5c5c;
+$blue: blue;
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+  }
